@@ -1,0 +1,25 @@
+---
+layout: 'base.njk'
+---
+{{ content | safe }}
+<article>
+	<div class="row">
+		<div class="center">
+			<div class="column">
+				<label for="color-in">color (hex):</label>
+				<div class="row">
+					<input type="text" maxlength="7"
+						   name="color-in"
+						   id="color-in"
+						   pattern="^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+						   value="#"
+						   required>
+				</div>
+				<button type="submit" id="color-add">add
+					color
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="color-out"></div>
+</article>
