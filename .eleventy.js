@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
 			includes: "_includes",
 			data: "_data",
 			output: "_site",
+			templateFormats: ["njk", "md", "11ty.js"]
 		},
 	};
 };

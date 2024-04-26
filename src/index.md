@@ -1,5 +1,5 @@
 ---
-layout: 'pages/home.njk'
+layout: 'layouts/home.njk'
 ---
 # Commendable!
 
