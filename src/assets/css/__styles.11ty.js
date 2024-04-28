@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const postcss = require("postcss");
+const postcssImport = require("postcss-import");
 
 module.exports = class {
 	async data() {
@@ -15,7 +16,8 @@ module.exports = class {
 	}
 
 	async render({ rawCss, rawFilepath }) {
-		return await postcss([require("postcss-import")])
+		return await postcss()
+			.use(postcssImport())
 			.process(rawCss, { from: rawFilepath })
 			.then((result) => result.css);
 	}

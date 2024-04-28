@@ -10,7 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "3.0.0-alpha.9",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.38"
+  },
+  "devDependencies": {
     "postcss-import": "^16.1.0"
   }
 }
